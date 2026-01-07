@@ -1,38 +1,102 @@
-# mevlint
+# Mevlint
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+**Mevlint** is a collaboration-first platform being built for writers, artists, animators, filmmakers, and cinematic creators.
 
-## Getting Started
+Creative talent is everywhere.  
+Infrastructure isn’t.
 
-First, run the development server:
+Mevlint aims to provide a focused space where creators can discover each other, collaborate meaningfully, and build projects without fighting algorithmic noise.
+
+---
+
+## Status
+
+🚧 **Under active development**
+
+Currently, this repository contains the **landing experience and waitlist flow**.  
+The core application will be introduced in phases.
+
+Early development is intentionally limited to ensure:
+- Clean architecture
+- Creator-first design decisions
+- Scalable foundations
+
+---
+
+## What This Repository Includes
+
+- Marketing / landing pages
+- Creator-focused messaging
+- Waitlist onboarding flow
+- Production-ready project structure
+- App Router–based Next.js setup
+
+The main application logic is scaffolded but not yet implemented.
+
+---
+
+## Tech Stack
+
+- **Next.js** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Prisma** (planned)
+- **PostgreSQL** (planned)
+- **Modern server-first architecture**
+
+The stack is chosen for long-term maintainability and scalability.
+
+---
+
+## Project Structure (High Level)
+
+app/
+├─ (marketing)/ # Landing pages
+├─ (app)/ # Main application (future)
+├─ api/ # Server routes
+components/ # UI components
+lib/ # Utilities & services
+prisma/ # Database schema (planned)
+
+
+---
+
+## Philosophy
+
+Mevlint is being built with a few core principles:
+
+- Collaboration over clout  
+- Craft over trends  
+- Signal over noise  
+- Creators before algorithms  
+
+This project is not focused on rapid feature shipping, but on building the right foundation.
+
+---
+
+## Running Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Roadmap (High Level)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Landing & waitlist
 
-## Learn More
+Creator identity system
 
-To learn more about Next.js, take a look at the following resources:
+Discovery & categorization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Collaboration tooling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Studio & hiring workflows
 
-## Deploy on Vercel
+Details will evolve as development progresses.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is currently private and not licensed for redistribution.
