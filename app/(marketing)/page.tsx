@@ -10,6 +10,10 @@ import {
   ChevronDown, Workflow, Shield, Zap, Map, Moon, Sun, Cross
 } from 'lucide-react';
 
+import Link from "next/link";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/home/Hero";
+
 gsap.registerPlugin(ScrollTrigger);
 
 // --- DATA: THE FOUNDRY MANIFESTOS ---
@@ -81,36 +85,11 @@ export default function MevlintVanguardMasterpiece() {
       {/* 1. ATMOSPHERIC OVERLAY (MOVED TO BACKGROUND LAYER) */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.02] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-0"></div>
 
-      {/* 2. NAVIGATION (HEADER CROP FIX) */}
-      <nav className="fixed top-0 w-full px-8 md:px-20 py-10 flex justify-between items-center z-[250] bg-[#050505]/90 backdrop-blur-md border-b border-white/5">
-        <h1 className="text-xl font-black tracking-tighter uppercase"><a href="/">MEVLINT</a></h1>
-        <div className="flex gap-10 text-[10px] font-bold uppercase tracking-widest hidden md:flex opacity-40">
-          <a href="/explore" className="hover:text-[#00e5ff] transition-colors">Explore</a>
-          <a href="/vision" className="hover:text-[#ff4d4d] transition-colors">Vision</a>
-          <div className="flex items-center gap-2 text-[#00e5ff]">
-            <Activity size={10} className="animate-pulse" />
-            <a href="/updates">Logs</a>
-          </div>
-        </div>
-        <a href="/waitlist" className="bg-[#00e5ff] text-black px-8 py-2 rounded-full font-black text-[10px] tracking-widest hover:bg-white transition-all">JOIN PRODUCTION</a>
-      </nav>
+      <Navbar />
 
       <main className="relative z-10">
 
-        {/* 3. HERO (ADDING PADDING TOP TO PREVENT CROP) */}
-        <section className="h-screen flex flex-col justify-center px-8 md:px-20 lg:px-40 pt-32 border-b border-white/5 relative">
-          <div className="max-w-6xl">
-            <span className="hero-line text-[10px] uppercase tracking-[1em] opacity-30 mb-8 block text-[#ffcc33]">Sequence 01 // The Foundry Initialized</span>
-            <h2 className="hero-line text-[12vw] md:text-[9vw] leading-[0.85] font-black tracking-tighter uppercase mb-12 italic">
-              Imagine <br/> <span className="text-[#00e5ff]">Executable.</span>
-            </h2>
-            <div className="hero-line flex flex-col md:flex-row gap-16 items-start md:items-end mt-12 border-l border-[#ff4d4d] pl-10">
-              <p className="max-w-md text-lg opacity-40 font-medium leading-relaxed uppercase italic">
-                "Infrastructure for creators who build worlds, not just posts. We provide the gravity, you provide the vision."
-              </p>
-            </div>
-          </div>
-        </section>
+        <Hero />
 
         {/* 4. THE FOUNDRY: HIGH-CONTRAST INDUSTRIAL (DROPDOWN STYLE) */}
         <section className="reveal-up py-40 px-8 md:px-20 lg:px-40 bg-[#e5e5e5] text-black relative z-20">

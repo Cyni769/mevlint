@@ -8,6 +8,7 @@ import {
   Activity, Binary, Workflow, ArrowRight, Layers,
   Compass, Eye
 } from 'lucide-react';
+import Navbar from '@/components/layout/Navbar';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -63,17 +64,7 @@ export default function VisionMasterpiece() {
       {/* 1. ATMOSPHERIC OVERLAYS (BACKGROUND LAYER) */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.02] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-0"></div>
 
-      {/* 2. NAVIGATION (HEADER CROP FIX) */}
-      <nav className="fixed top-0 w-full px-8 md:px-20 py-10 flex justify-between items-center z-[200] bg-[#050505]/90 backdrop-blur-md border-b border-white/5">
-        <h1 className="text-xl font-black tracking-tighter uppercase"><a href="/">MEVLINT</a></h1>
-        <div className="flex gap-10 text-[10px] font-bold uppercase tracking-widest hidden md:flex opacity-40">
-          <a href="/" className="hover:text-[#00e5ff] transition-colors">Home</a>
-          <a href="/explore" className="hover:text-[#00e5ff] transition-colors">Explore</a>
-          <a href="/vision" className="text-[#00e5ff]">Vision</a>
-          <a href="/updates" className="hover:text-[#ffcc33] transition-colors">Logs</a>
-        </div>
-        <a href="/waitlist" className="bg-[#00e5ff] text-black px-8 py-2 rounded-full font-black text-[10px] tracking-widest hover:bg-white transition-all uppercase">Join Production</a>
-      </nav>
+      <Navbar />
 
       <main className="relative z-10">
         
