@@ -186,10 +186,6 @@ export default function UpdatesVanguard() {
               <li><Link href="/vision" className="hover:text-[#ff4d4d]">Vision</Link></li>
             </ul>
           </div>
-
-          <div className="md:col-span-3 flex flex-col justify-between items-end border-l border-white/5 pl-8 h-full min-h-[250px]">
-            <div className="text-5xl font-black opacity-[0.05] [writing-mode:vertical-rl] tracking-tighter uppercase mb-auto h-fit text-white">DevLogs</div>
-          </div>
         </div>
       </footer>
     </div>

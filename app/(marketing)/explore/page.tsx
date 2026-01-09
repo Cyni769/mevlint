@@ -319,23 +319,21 @@ export default function ExploreVanguard() {
           </div>
         </section>
 
-        {/* 7. THE FILM STRIP: THE VANGUARD */}
-        <section ref={horizontalRef2} className="h-screen overflow-hidden bg-black flex items-center border-b border-white/5">
+        {/* 7. THE FILM STRIP: VANGUARD ARCHEOTYPES */}
+        <section ref={horizontalRef2} className="h-screen overflow-hidden bg-black flex items-center border-y border-white/5">
           <div ref={wrapperRef2} className="flex h-[75vh] gap-4 px-[15vw] items-center">
+            <div className="min-w-[45vw] md:min-w-[35vw] flex flex-col justify-center whitespace-normal">
+              <span className="text-[10px] uppercase tracking-[1em] text-[#ffcc33] mb-6 font-bold">Focus // 03</span>
+              <h3 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-10 italic">Vanguard <br/> Archetypes.</h3>
+            </div>
             {VANGUARD_ARCHETYPES.map((panel, i) => (
               <div key={i} className="min-w-[70vw] md:min-w-[40vw] h-full border border-white/10 relative group cursor-crosshair overflow-hidden">
                 <div className={`absolute inset-0 ${panel.img} group-hover:scale-110 transition-transform duration-[2s] ease-out`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-700" />
                 <div className="absolute bottom-12 left-12 z-10">
-                  <span className={`block text-[10px] uppercase tracking-[0.6em] mb-4 opacity-40 font-bold ${panel.accent}`}>
-                    Focus // 0{i + 1}
-                  </span>
-                  <h4 className="text-5xl md:text-6xl font-black italic mb-4 uppercase tracking-tighter leading-none">
-                    {panel.t}
-                  </h4>
-                  <p className="text-sm uppercase tracking-[0.2em] opacity-60 font-medium max-w-xs leading-relaxed">
-                    {panel.d}
-                  </p>
+                  <span className={`block text-[10px] uppercase tracking-[0.6em] mb-4 opacity-40 font-bold ${panel.accent}`}>Role // 0{i + 1}</span>
+                  <h4 className="text-5xl md:text-6xl font-black italic mb-4 uppercase tracking-tighter leading-none">{panel.t}</h4>
+                  <p className="text-sm uppercase tracking-[0.2em] opacity-60 font-medium max-w-xs">{panel.d}</p>
                 </div>
               </div>
             ))}
@@ -378,11 +376,6 @@ export default function ExploreVanguard() {
               <li><a href="/vision" className="hover:text-[#ff4d4d] transition-colors">Vision</a></li>
               <li><a href="/updates" className="hover:text-[#ffcc33] transition-colors">Logs</a></li>
             </ul>
-          </div>
-
-          <div className="md:col-span-3 flex flex-col justify-between items-end border-l border-white/5 pl-8 h-full min-h-[250px]">
-            {/* Sitemap Vertical Text Pinned to Top Right */}
-            <div className="text-5xl font-black opacity-[0.05] [writing-mode:vertical-rl] tracking-tighter uppercase mb-auto h-fit">Explore</div>
           </div>
         </div>
       </footer>

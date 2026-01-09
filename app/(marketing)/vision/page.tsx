@@ -237,10 +237,6 @@ export default function VisionMasterpiece() {
                 <li><a href="/updates" className="hover:text-[#ffcc33] transition-colors">Dev Logs</a></li>
               </ul>
             </div>
-
-            <div className="md:col-span-3 flex flex-col justify-between items-end border-l border-white/5 pl-8 h-full min-h-[250px]">
-              <div className="text-5xl font-black opacity-[0.05] [writing-mode:vertical-rl] tracking-tighter uppercase mb-auto h-fit">Vision</div>
-            </div>
           </div>
         </footer>
       </main>
